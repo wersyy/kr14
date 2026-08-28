@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9e9e9;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 0;
+}
+
+/* ОСНОВНОЙ БЛОК */
+
+.email {
+    width: 414px;
+    background: #111214;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+
+.header {
+    height: 48px;
+    background: #303030;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple {
+    font-size: 20px;
+    color: #000;
+
+    /* имитация логотипа Apple */
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.apple::after {
+    content: "";
+    position: absolute;
+
+    width: 7px;
+    height: 4px;
+
+    background: #000;
+
+    border-radius: 100%;
+    top: -3px;
+    right: 0;
+
+    transform: rotate(-35deg);
+}
+
+/* MAIN */
+
+.main {
+    padding: 38px 45px 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 27px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.buy {
+    color: #00a9f4;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.buy:hover {
+    color: #fff;
+}
+
+/* PRODUCT */
+
+.product {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.product img {
+    width: 235px;
+    height: auto;
+    display: block;
+}
+
+/* FEATURES */
+
+.features {
+    margin-top: 72px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    text-align: left;
+}
+
+.feature span {
+    display: block;
+    font-size: 8px;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.feature strong {
+    display: block;
+    font-size: 21px;
+    line-height: 1;
+    color: #fff;
+}
+
+.feature p {
+    font-size: 8px;
+    color: #aaa;
+    margin-top: 3px;
+    white-space: nowrap;
+}
+
+.line {
+    height: 3px;
+    background: #ffad8b;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #303030;
+
+    text-align: center;
+
+    padding: 32px 45px 28px;
+
+    color: #777;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    margin-bottom: 27px;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 7px;
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #4b9dcc;
+    text-decoration: none;
+}
+
+/* АДАПТАЦИЯ */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 0;
+        background: #111214;
+    }
+
+    .email {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
